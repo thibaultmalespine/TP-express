@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{restaurant.name}}</title>
+</head>
+<body>
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <div class="col-10 col-sm-8 col-lg-6">
+    <img
+      src="/assets/img/restaurant.jpg"
+      class="d-block mx-lg-auto img-fluid"
+      alt="Photo du restaurant, un grand espace ouvert avec des tables et des chaises"
+      width="700"
+      height="500"
+      loading="lazy"
+    />
+  </div>
+  <div class="col-lg-6">
+    <h1
+      class="display-5 fw-bold text-body-emphasis lh-1 mb-3"
+      data-test-restaurant-title
+    >
+      {{restaurant.name}}
+    </h1>
+    <p class="lead" data-test-restaurant-description>
+      {{restaurant.description}}
+    </p>
+    <a href="/menus" class="btn btn-primary btn-lg px-4 me-md-2">
+      Voir les menus
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
